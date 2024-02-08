@@ -152,7 +152,7 @@ img {
     display: flex;
     flex-direction: column;
     width: 15vw;
-    height: 25vh;
+    height: 100%;
     border-radius: 7px;
     margin-bottom: 15px;
 }
@@ -191,8 +191,8 @@ button {
     flex-direction: row; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    gap: 50px;
+    grid-template-rows: repeat(auto);
+    gap: 70px;
     justify-items: center;
 
 }
