@@ -8,117 +8,192 @@
 
 
 body {
-    display: grid;
+    /* display: grid;
     border: solid 1px black;
     grid-template-areas: "nav header"
                         "nav main"
                         "nav main";
     grid-template-columns: 2fr 8fr;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 1fr 9fr; */
     font-family: 'Poppins';
-
+    display: flex;
+    flex-direction: row;
 }
 
 header {
-    grid-area: header;
+    
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    height: 7vh;
 }
 
-#btnMenu {
-    font-size: 1.5rem;
-    /* color: #fff; */
-}
-
-/* Estilos del nav */
 nav {
-    grid-area: nav;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     height: 100vh;
-    
+    overflow: hidden;
+    transition: all 0.5s linear;
+    position: sticky;
+    width: 15%;
+    border: solid 1px red;
+}
+
+.elementos {
+    display: none;
+}
+
+.padreElements:hover .elementos {
+    display: block;
+    margin: 0;
+}
+
+.formulario {
+    display: none;
+}
+
+.padreForms:hover .formulario {
+    display: block;
 }
 
 .admin {
     display: flex;
     flex-direction: row;
-    /* text-align: start; */
     width: 100%;
     font-size: 1.3rem;
-    color: rgb(93, 25, 241);
     align-items: center;
-    /* margin: 10px 20px 10px 20px; */
-    /* padding: 5%; */
-    /* width: 100%; */
-    /* height: 20%; */
-    /* justify-content: center; */
     justify-content: flex-start;
-    margin-top: 10px;
+    height: 72px;
 }
 
-.admin i {
-    margin: 0 20px 0 10px;
+.admin i{
+    margin: 0 20px 0 25px;
 }
 
-.dashboard i,.charts i, .widgets i, .formulario2 i, .formulario1 i, .tabla i {
-    margin: 0 20px 0 0px;
+.smile {
+    font-size: 2rem;
 }
 
-.smile{
+.menu {
+    justify-self: flex-start;
+    font-size: 2rem;
+}
+
+body .nav:hover {
+    width: 15%;
+}
+
+#btnMenu:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.nav.active {
+    width: 3%;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+ul i {
+    font-size: 2rem;
+    margin-right: 40px;
+}
+
+ul p {
     font-size: 1.7rem;
 }
 
-.dashboard {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 50%;
-    height: 5vh;
-    padding: 10px 15px 10px 15px;
-    margin: 20px;
-    align-self: flex-start;
-    text-align: center;
-    /* background-color: aqua; */
-    font-size: 1.2rem;
-}
-
-.charts, .widgets, .formulario2, .formulario1, .tabla {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* justify-content: space-around; */
-    width: 50%;
-    height: 5vh;
-    /* width: 80%; */
-    height: 5vh;
-    padding: 10px 15px 10px 15px;
-    margin: 20px;
-    font-size: 1.2rem;
-    /* padding: 10px 20px 10px 60px;
-    margin: 20px; */
-}
-
-.Main, .tableForms {
-    width: 100%;
-    font-size: 1.2rem;
-}
-
-.Main p, .tableForms p {
-    margin-left: 10px;
-}
-
-
-/* Estilos del main */
 main {
-    grid-area: main;
+    width: 100%;
+    height: 94vh;
+    left: 0;
+    margin-top: 6vh;
+    border: solid 1px orangered;
+    /* top: 0; */
+    border-radius: 30px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Estilos del footer */
-footer {
-    grid-area: footer;
+/* .imagen {
+    width: 15vw;
+    height: 25vh;
+} */
+
+.titulo {
+    font-size: 2.5rem;
+    padding: 5px;
+    margin: 10px;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    height: 25vh;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.contenido {
+    /* display: grid; */
+    font-size: 1.5rem;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr; */
+    text-align: center;
+}
+
+.contenido p {
+    width: 50%;
+}
+
+.enviar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    right: 0;
+    padding: 8px;
+    width: 5vw;
+    font-family: 'Poppins';
+    border-radius: 7px;
+    font-size: 1.2rem;
+}
+
+.productosVenta {
+    /* display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+    justify-items: center;
+
 }
 
