@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="js/main.js">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    
+    
+    <nav class="nav">
+        <div class="admin">
+            <i class='bx bxs-smile smile'></i>
+            <h2>CampusShop</h2>
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <p>Todos los productos</p>
+                </a>
+            </li>
+            
+            <li>
+                <a href="televisores.html">
+                    <i class='bx bxs-chart' ></i>
+                    <p>Televisores</p>
+                </a>
+            </li>
+            <li>
+                <a href="consolas.html">
+                    <i class='bx bxs-widget' ></i>
+                    <p>Consolas</p>
+                </a>
+            </li>
+            <li>
+                <a href="computadores.html">
+                    <i class='bx bxs-widget' ></i>
+                    <p>Computadores</p>
+                </a>
+            </li>
+            <li>
+                <a href="carritos.html">
+                    <i class='bx bxs-cart'></i>
+                    <p>Carritos</p>
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+
+
+
+    <header>
+        <i class='bx bx-menu menu' id="btnMenu"></i>
+    </header>
+
+
+    
+    <main>
+        <h2 class="titulo">Carrito</h2>
+        <div class="carrito">
+            <div class="imag">
+                <img src="storage/images/televisores/tv1Img1(recorte).jpg" alt="No se puede cargar la imagen">
+            </div>
+            <div>
+                <h4>Televisores</h4>
+                <p>Samsung 55"</p>
+            </div>
+            <div class="quantity">
+                <label for="cantidad"><h4>Cantidad</h4></label>
+                <input type="number" name="cantidad" id="cantidad" placeholder="2">
+                
+            </div>
+            <div>
+                <h4>Precio</h4>
+                <p>$ 3.500.000</p>
+            </div>
+            <div>
+                <h4>Subtotal</h4>
+                <p>$ 7.000.000</p>
+            </div>
+            <i class='bx bxs-trash-alt elim'></i>
+        </div>
+
+        <div class="carrito">
+            <div class="imag">
+                <img src="storage/images/consolas/consola1Img1(recorte).jpg" alt="No se puede cargar la imagen">
+            </div>
+            <div>
+                <h4>Consolas</h4>
+                <p>Play Station 4</p>
+            </div>
+            <div class="quantity">
+                <label for="cantidad"><h4>Cantidad</h4></label>
+                <input type="number" name="cantidad" id="cantidad" placeholder="1">
+                
+            </div>
+            <div>
+                <h4>Precio</h4>
+                <p>$ 1.500.000</p>
+            </div>
+            <div>
+                <h4>Subtotal</h4>
+                <p>$ 1.500.000</p>
+            </div>
+            <i class='bx bxs-trash-alt elim'></i>
+        </div>
+
+        <div class="carrito">
+            <div class="imag">
+                <img src="storage/images/computadores/pc1Img1(recorte).jpeg" alt="No se puede cargar la imagen">
+            </div>
+            <div>
+                <h4>Computadores</h4>
+                <p>Asus Vivobook U</p>
+            </div>
+            <div class="quantity">
+                <label for="cantidad"><h4>Cantidad</h4></label>
+                <input type="number" name="cantidad" id="cantidad" placeholder="1">
+                
+            </div>
+            <div>
+                <h4>Precio</h4>
+                <p>$ 1.750.000</p>
+            </div>
+            <div>
+                <h4>Subtotal</h4>
+                <p>$ 1.750.000</p>
+            </div>
+            <i class='bx bxs-trash-alt elim'></i>
+        </div>
+
+        <div class="carrito">
+            <div class="imag">
+                <img src="storage/images/computadores/pc3Img1(recorte).jpeg" alt="No se puede cargar la imagen">
+            </div>
+            <div>
+                <h4>Computadores</h4>
+                <p>Estacion Mac</p>
+            </div>
+            <div class="quantity">
+                <label for="cantidad"><h4>Cantidad</h4></label>
+                <input type="number" name="cantidad" id="cantidad" placeholder="1">
+                
+            </div>
+            <div>
+                <h4>Precio</h4>
+                <p>$ 8.200.000</p>
+            </div>
+            <div>
+                <h4>Subtotal</h4>
+                <p>$ 8.200.000</p>
+            </div>
+            <i class='bx bxs-trash-alt elim'></i>
+        </div>
+
+        <div class="comprar">
+            <a href="vacio.html"><button class="vaciarCarrito">Vaciar carrito</button></a>
+            
+            <div class="contenedor">
+                
+                <div>
+                    <h4>Total</h4>
+                    <p>$ 8500</p>
+                </div>
+                
+                <button>Comprar Ahora</button>
+            </div>
+        </div>        
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
