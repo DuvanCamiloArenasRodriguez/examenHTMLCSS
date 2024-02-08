@@ -36,26 +36,9 @@ nav {
     height: 100vh;
     overflow: hidden;
     transition: all 0.5s linear;
-    position: sticky;
-    width: 15%;
+    /* position: sticky; */
+    width: 25vw;
     border: solid 1px red;
-}
-
-.elementos {
-    display: none;
-}
-
-.padreElements:hover .elementos {
-    display: block;
-    margin: 0;
-}
-
-.formulario {
-    display: none;
-}
-
-.padreForms:hover .formulario {
-    display: block;
 }
 
 .admin {
@@ -82,7 +65,7 @@ nav {
 }
 
 body .nav:hover {
-    width: 15%;
+    width: 25vw;
 }
 
 #btnMenu:hover {
@@ -91,7 +74,7 @@ body .nav:hover {
 }
 
 .nav.active {
-    width: 3%;
+    width: 4vw;
 }
 
 ul li{
@@ -112,15 +95,20 @@ ul a {
 ul i {
     font-size: 2rem;
     margin-right: 40px;
+    
 }
 
+/* li:hover {
+    background-color: aqua;
+} */
+
 ul p {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 main {
     width: 100%;
-    height: 94vh;
+    height: 90vh;
     left: 0;
     margin-top: 6vh;
     border: solid 1px orangered;
@@ -159,7 +147,7 @@ img {
 
 .contenido {
     /* display: grid; */
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     /* grid-template-columns: 1fr;
     grid-template-rows: 1fr; */
     text-align: center;
@@ -178,10 +166,11 @@ img {
 button {
     right: 0;
     padding: 8px;
-    width: 5vw;
+    width: 6vw;
     font-family: 'Poppins';
     border-radius: 7px;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    border: none;
 }
 
 .productosVenta {
@@ -195,6 +184,10 @@ button {
     gap: 70px;
     justify-items: center;
 
+}
+
+.car {
+    margin-top: 30vh;
 }
 
 .carrito {
@@ -257,4 +250,9 @@ button {
 #carritoVacio {
     font-family: 'Poppins';
     font-size: 2rem;
+}
+
+h3 {
+    align-self: center;
+    margin-top: 15vh;
 }
